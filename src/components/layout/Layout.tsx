@@ -1,9 +1,9 @@
-import * as React from 'react'
+import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import Header from './Header'
 import './layout.css'
 import * as S from './Layout.style'
-import Footer from 'components/Footer'
+import Footer from 'components/layout/Footer'
 
 interface ILayoutProps {
   children: React.ReactNode

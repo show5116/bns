@@ -1,8 +1,8 @@
-import React, { FunctionComponent } from 'react'
+import React from 'react'
 import * as S from './Menus.style'
 import { Link } from 'gatsby'
 
-const Menus: FunctionComponent = () => {
+const Menus = () => {
   return (
     <S.Container>
       <S.Menu>

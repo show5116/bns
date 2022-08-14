@@ -1,8 +1,8 @@
-import * as React from 'react'
+import React from 'react'
 import * as S from './Header.style'
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
-import Menus from 'components/Menus'
+import Menus from 'components/ui/organisms/Menus'
 
 const Header = () => {
   return (
@@ -10,7 +10,7 @@ const Header = () => {
       <S.Content>
         <Link to="/">
           <StaticImage
-            src="../images/logo2.png"
+            src="../../images/logo2.png"
             loading="eager"
             width={350}
             height={100}

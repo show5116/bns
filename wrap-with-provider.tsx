@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Provider } from 'react-redux'
 
 import createStore from './src/state/createStore'
-import StyledThemeProvider from './src/components/StyledThemeProvider'
+import StyledThemeProvider from './src/components/layout/StyledThemeProvider'
 
 interface IProps {
   element: JSX.Element

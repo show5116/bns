@@ -1,9 +1,9 @@
-import React, { FunctionComponent } from 'react'
+import React from 'react'
 
-import Layout from '../components/Layout'
-import Seo from '../components/Seo'
+import Layout from 'components/layout/Layout'
+import Seo from 'components/layout/Seo'
 
-const NotFoundPage: FunctionComponent = () => (
+const NotFoundPage = () => (
   <Layout>
     <h1>404: Not Found</h1>
     <p>You just hit a route that doesn&#39;t exist... the sadness.</p>

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import { variable } from '../styles/variable'
-import { color } from '../styles/color'
+import { variable } from '../../styles/variable'
+import { color } from '../../styles/color'
 
 export const Container = styled.header`
   position: fixed;
@@ -13,6 +13,8 @@ export const Container = styled.header`
   transition: top 0.3s ease 0.2s;
   top: 0;
   border-bottom: 1px solid ${color.lightGray};
+  z-index: 999;
+  background-color: ${color.white};
 `
 
 export const Content = styled.div`
