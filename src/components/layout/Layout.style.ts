@@ -9,5 +9,5 @@ export const Container = styled.div`
 
 export const Main = styled.main`
   margin: 0 auto;
-  max-width: 640px;
+  max-width: 960px;
 `

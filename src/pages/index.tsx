@@ -5,15 +5,12 @@ import Carousel from 'components/ui/organisms/Carousel'
 import CarouselItem from 'components/ui/molecules/CarouselItem'
 
 const IndexPage = () => {
-  const carouselWidth = 700
+  const carouselWidth = 960
   const carouselWidthUnit = 'px'
 
   return (
     <Layout>
       <S.Container>
-        <br />
-        <br />
-        <br />
         <Carousel
           width={carouselWidth}
           widthUnit={carouselWidthUnit}

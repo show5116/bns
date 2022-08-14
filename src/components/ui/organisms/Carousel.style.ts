@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div<{ width: number; widthUnit: string }>`
   position: relative;
-  height: 300px;
+  height: 400px;
   width: ${props => `${props.width}${props.widthUnit}`};
   margin: auto;
   background-color: white;
@@ -36,7 +36,7 @@ export const List = styled.div<{
 export const PrevButton = styled.button`
   position: absolute;
   left: 0;
-  top: 120px;
+  top: 160px;
   background-color: rgba(0, 0, 0, 0.3);
   width: 30px;
   height: 60px;
@@ -48,7 +48,7 @@ export const PrevButton = styled.button`
 export const NextButton = styled.button`
   position: absolute;
   right: 0;
-  top: 120px;
+  top: 160px;
   background-color: rgba(0, 0, 0, 0.3);
   width: 30px;
   height: 60px;

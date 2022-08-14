@@ -6,6 +6,7 @@ import {
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons'
 import { color } from '../../../styles/color'
+import useInterval from 'hooks/useInterval'
 
 interface IProps {
   children: JSX.Element | JSX.Element[]
@@ -21,8 +22,17 @@ const Carousel = ({ children, width, widthUnit, transitionDelay }: IProps) => {
   const [dotCurrent, setDotCurrent] = useState(0)
   const [isTransition, setIsTransition] = useState(true)
   const [buttonActive, setButtonActive] = useState(true)
+  const [intervalLock, setIntervalLock] = useState(false)
+
+  useInterval(() => {
+    if (!intervalLock) {
+      nextCurrent()
+    }
+  }, 3000)
 
   const onClickPrev = () => {
+    setIntervalLock(true)
+    setTimeout(() => setIntervalLock(false), 10000)
     if (!buttonActive) {
       return
     }
@@ -45,6 +55,12 @@ const Carousel = ({ children, width, widthUnit, transitionDelay }: IProps) => {
     if (!buttonActive) {
       return
     }
+    setIntervalLock(true)
+    setTimeout(() => setIntervalLock(false), 10000)
+    nextCurrent()
+  }
+
+  const nextCurrent = () => {
     setIsTransition(true)
     setCurrent(prev => prev + 1)
     if (current === childrenCount - 1) {
@@ -96,7 +112,7 @@ const Carousel = ({ children, width, widthUnit, transitionDelay }: IProps) => {
               key={`dot${index}`}
               active={index === dotCurrent}
               onClick={() => onDotClick(index)}
-            ></S.Dot>
+            />
           ))}
       </S.Pagination>
     </S.Container>
