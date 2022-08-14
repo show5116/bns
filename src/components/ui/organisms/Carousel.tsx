@@ -61,6 +61,7 @@ const Carousel = ({ children, width, widthUnit, transitionDelay }: IProps) => {
   }
 
   const onDotClick = (index: number) => {
+    setIsTransition(true)
     setDotCurrent(() => index)
     setCurrent(() => index)
   }
