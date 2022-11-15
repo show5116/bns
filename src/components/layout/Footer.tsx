@@ -21,7 +21,7 @@ const Footer = () => {
             </tr>
             <tr>
               <td>주소</td>
-              <td>송촌동</td>
+              <td>대전 대덕구 동춘당로54번길 42 201호</td>
             </tr>
           </tbody>
         </S.Table>

@@ -7,7 +7,4 @@ export const Container = styled.div`
   min-height: 100vh;
 `
 
-export const Main = styled.main`
-  margin: 0 auto;
-  max-width: 960px;
-`
+export const Main = styled.main``

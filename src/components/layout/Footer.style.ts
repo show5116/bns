@@ -2,9 +2,10 @@ import styled from 'styled-components'
 import { color } from '../../styles/color'
 
 export const Container = styled.footer`
-  background-color: ${color.lightGray};
-  padding-top: 1rem;
+  background-color: ${color.black};
+  padding-top: 0.3rem;
   padding-bottom: 0.25rem;
+  color: ${color.gray};
 `
 export const Content = styled.article`
   display: flex;
